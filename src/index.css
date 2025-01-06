@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav{
+    border-bottom: 2px solid black;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    background: rgb(201, 145, 71);
+    position: sticky;
+    top: 0;
+}
+
+/* Home  */
+
+.container {
+    background: linear-gradient(to bottom, burlywood, brown) ;
+    position: relative;
+    z-index: 0;
+}
+.home{
+    padding: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    color: white;
+    gap: 20px;
+}
+
+.home h1{
+    justify-self: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.home h2{
+    margin-top: 20px;
+}
+
+.categories{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.categories p {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    font-size: 36px;
+    display: flex;
+    color: rgb(255, 145, 0);
+    justify-content: center;
+    align-items: end;
+    box-sizing: border-box;
+}
+
+#type{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 14px;
+    padding: 2px;
+    font-weight: bolder;
+    color: rgb(255, 145, 0);
+    
+}
+
+.categories img {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    z-index: -2;
+    position: absolute;
+}
+
+.buttons {
+    display: flex;
+    width: 99%;
+    position:absolute;
+    justify-content: space-between;
+}
+
+.next, .prev {
+    padding:16px;
+    color: black;
+    font-size: x-large;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-books{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.book {
+    width: 100%;
+    height: 650px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://dorrancebookpromotion.com/wp-content/uploads/2015/02/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box; 
+    border: 2px solid #ccc;
+    gap: 10px;
+}
+
+.book img{
+    height:430px;
+    width: 400px;
+}
+
+.book button{
+    padding: 4px;
+    background-color: burlywood;
+}
+
+/* Browse Books */
+#err{
+    justify-self: center;
+    font-size: x-large;
+}
+
+.browseBooks{
+    background: linear-gradient(to bottom, burlywood, brown) ;
+}
+.browseBooks .header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header input{
+    width: 350px;
+    height: 20px;
+}
+
+.filteredBooks {
+    padding: 24px;
+    height: 90vh;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    overflow-y:auto ;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.filteredBooks .filteredBook{
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.filteredBooks img{
+    width: 280px;
+    height: 250px;
+}
+
+.filteredBooks .details{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details button {
+    padding: 2px;
+    align-self: center;
+    background: burlywood;
+}
+
+
+/* Book Details */
+
+.bookDetails{
+    background: url("https://wallpaperaccess.com/full/2862263.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookDetails div{
+    font-size: x-large;
+    background-color: rgba(222, 184, 135, 0.418);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+    box-sizing: border-box;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.bookDetails div h1{
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.bookDetails div button {
+    align-self: center;
+    margin-top: 20px;
+    padding: 4px;
+    background-color: burlywood;
+}
+
+/* Form  */
+.form {
+    background: linear-gradient(to bottom, burlywood, brown) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    height: 80vh;
+}
+
+form{  
+    background-color: rgba(209, 150, 74, 0.388);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 40px;
+}
+
+form input, textarea{
+    border: 2px solid black;
+    width: 200px;
+    border-radius: 6px;
+    transition: 0.5s;
+    padding: 2px;
+}
+
+form input{
+    height: 20px;
+}
+
+form textarea{
+    height: 30px;
+}
+
+form input:hover{
+    width: 250px;
+    height: 30px;
+}
+
+form textarea:hover{
+    width: 250px;
+    height: 60px;
+}
+form button{
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 167, 35);
+    transition: 0.3s;
+}
+
+form button:hover{
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(223, 126, 0);
+}
+
+#bookImage{
+    border: none;
+    font-size: medium;
+}
